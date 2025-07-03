@@ -181,7 +181,7 @@ main {
     background-color: #0A1128;
     width: 100%;
 }
-
+/* comentario para cargar imagenes */
 .fondo-galpon{
     position: relative;
     background-image: url('../Images/galpon.jpg');
