@@ -1,0 +1,66 @@
+
+.logotipo {
+    width: 5rem;
+}
+
+.headerfondo {
+    background-image: url("/Images/Shai.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: sticky;
+    top: 0px;
+
+}
+
+.tlogo {
+    width: 4rem;
+}
+
+.tlogo-fondo {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    bottom: 0.5rem;
+    right: 0.5rem;
+}
+
+
+
+
+header div {
+    display: flex;
+    text-align: center;
+    padding: 0.5%;
+    margin: 0%;
+    justify-content: space-between;
+}
+
+.navegacion-header ul {
+    display: flex;
+    height: 10vh;
+    margin: 2%;
+
+
+}
+
+.navbar-text-center {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-brand img {
+    height: 10vh;
+}
+
+.navbar-custom {
+    background-color: rgb(0, 0, 0);
+}
+
+.nav-link {
+    text-align: right;
+}

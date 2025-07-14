@@ -1,285 +1,328 @@
+@import url("./layout/header.scss");
+@import url("./layout/footer.scss");
+@import url("./layout/main.scss");
+@import url("./utilidades/variable.scss");
+@import url("./utilidades/mediaq.scss");
+@import url("./utilidades/extends.scss");
+@import url("./utilidades/mixin.scss");
 * {
-    font-family: "Bebas Neue", sans-serif;
-    color: #FFFFFF;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: "Bebas Neue", sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 p {
-    color: #000000;
-
+  color: #000000;
 }
 
 body {
-    background-color: #0A1128;
-}
-
-.logotipo {
-    width: 5rem;
-}
-
-.headerfondo {
-    background-image: url("/Images/Shai.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: sticky;
-    top: 0px;
-
-}
-
-.tlogo {
-    width: 4rem;
-}
-
-.tlogo-fondo {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    bottom: 0.5rem;
-    right: 0.5rem;
+  background-color: #0A1128;
 }
 
 h1 {
-    color: #FFFFFF;
-    width: 50%;
+  color: #ffffff;
+  width: 50%;
 }
 
 h2 {
-    color: #000000;
+  color: #000000;
 }
 
 h3 {
-    color: #000000;
+  color: #000000;
 }
 
+.logotipo {
+  width: 5rem;
+}
+
+.headerfondo {
+  background-image: url("/Images/Shai.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: sticky;
+  top: 0px;
+}
+
+.tlogo {
+  width: 4rem;
+}
+
+.tlogo-fondo {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  bottom: 0.5rem;
+  right: 0.5rem;
+}
 
 header div {
-    display: flex;
-    text-align: center;
-    padding: 0.5%;
-    margin: 0%;
-    justify-content: space-between;
+  display: flex;
+  text-align: center;
+  padding: 0.5%;
+  margin: 0%;
+  justify-content: space-between;
 }
 
 .navegacion-header ul {
-    display: flex;
-    height: 10vh;
-    margin: 2%;
-
-
+  display: flex;
+  height: 10vh;
+  margin: 2%;
 }
 
 .navbar-text-center {
-    position: absolute;
-    left: 50%;
-    top: 10px;
-    transform: translateX(-50%);
-    color: white;
-    font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+  color: white;
+  font-weight: bold;
 }
 
 .navbar-brand img {
-    height: 10vh;
+  height: 10vh;
 }
 
 .navbar-custom {
-    background-color: rgb(0, 0, 0);
+  background-color: #000000;
 }
 
 .nav-link {
-    text-align: right;
+  text-align: right;
 }
 
-
 main {
-    background-color: #515253;
-    padding-top: 20vh;
+  background-color: #515253;
+  padding-top: 20vh;
 }
 
 .ofertas {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .parent {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 300px);
-
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 300px);
 }
 
 .div1 {
-    grid-column: 1/3;
-    grid-row: 1/2;
+  grid-column: 1/3;
+  grid-row: 1/2;
 }
 
 .div2 {
-    grid-column: 3/4;
-    grid-row: 1/2;
+  grid-column: 3/4;
+  grid-row: 1/2;
 }
 
 .div3 {
-    grid-column: 1/4;
-    grid-row: 2/4;
+  grid-column: 1/4;
+  grid-row: 2/4;
 }
 
 .div5 {
-    grid-area: 4 / 1 / 4 / 3;
+  grid-area: 4/1/4/3;
 }
 
 .div4 {
-    grid-area: 4 / 3 / 4 / 3;
+  grid-area: 4/3/4/3;
 }
 
 .parent img {
-
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* <- importante para recorte */
-
-
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* <- importante para recorte */
 }
 
 .card-offert {
-    width: 250px;
-    background-color: #E5E5E5;
-    padding: 2px;
-    border: 3px solid #000000;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: #000000;
+  width: 250px;
+  background-color: #E5E5E5;
+  padding: 2px;
+  border: 3px solid #000000;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #000000;
 }
 
 .card-offert h3 {
-    text-align: center;
-    font-size: 150%;
+  text-align: center;
+  font-size: 150%;
 }
 
 .card-offert img {
-    width: 100%;
+  width: 100%;
 }
 
 .precio-oferta span {
-    text-decoration: line-through;
-    color: rgb(255, 0, 0);
+  text-decoration: line-through;
+  color: #fd0000;
 }
 
 .precio-oferta {
-    color: rgb(0, 128, 0);
-    text-decoration: unset;
+  color: #1eff00;
+  text-decoration: unset;
 }
 
 .card-offert button {
-    background-color: #0A1128;
-    width: 100%;
+  background-color: #0A1128;
+  width: 100%;
 }
-/* comentario para cargar imagenes */
-.fondo-galpon{
-    position: relative;
-    background-image: url('../Images/galpon.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.fondo-cancha{
-    position: relative;
-    background-image: url('../Images/partido.jpeg');
-    background-size: cover;
-    background-position: center;
-}
-.parrafo-fondo {
-    padding: 4rem;
-    overflow: hidden;
-    transition: filter 0.5s ease;
-    filter: grayscale(100%);
 
+/* comentario para cargar imagenes */
+.fondo-galpon {
+  position: relative;
+  background-image: url("../Images/galpon.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.fondo-cancha {
+  position: relative;
+  background-image: url("../Images/partido.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.parrafo-fondo {
+  padding: 4rem;
+  overflow: hidden;
+  transition: filter 0.5s ease;
+  filter: grayscale(100%);
 }
 
 .parrafo-fondo:hover {
-    filter: grayscale(0%);
-
+  filter: grayscale(0%);
 }
 
 .parrafo-fondo p {
-    position: relative;
-    z-index: 2;
-    width: 50%;
-    background-color: rgba(255, 255, 255, 0.4);
+  position: relative;
+  z-index: 2;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .parrafo-fondo::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 1;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 
-
 footer {
-    background-image: url("../Images/floor.webp");
-    background-size: cover;
-    height: 10vh;
+  background-image: url("../Images/floor.webp");
+  background-size: cover;
+  height: 10vh;
 }
 
 footer p {
-    color: #FFFFFF;
-    font-size: 15px;
-    text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+  text-align: center;
 }
 
+@keyframes rotateCube {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+/* Card Flip */
+.card {
+  width: 200px;
+  height: 300px;
+  perspective: 1000px;
+}
 
-@media (max-width:500px) {
-    h1 {
-        width: 100%;
-    }
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
 
-    .parent {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
 
-    .div1 {
-        grid-column: 1/3;
-        grid-row: 1/2;
-    }
+.card-front, .card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
-    .div2 {
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
+.card-front {
+  background-image: url("./Images/antonyedwars.avif");
+  background-position: center center;
+  background-size: cover;
+}
 
-    .div3 {
-        grid-column: 1/3;
-        grid-row: 3/4;
-    }
+.card-back {
+  background-image: url("./Images/curryua.png");
+  background-position: center center;
+  background-size: cover;
+  transform: rotateY(180deg);
+}
 
-    .div4 {
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
+@media (max-width: 500px) {
+  h1 {
+    width: 100%;
+  }
+  .parent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .div1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .div2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .div3 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .div4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .div5 {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+  .parrafo-fondo {
+    padding: 1rem;
+  }
+  .parrafo-fondo p {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  }
+}
 
-    .div5 {
-        grid-column: 1/3;
-        grid-row: 4/5;
-    }
-
-    .parrafo-fondo {
-        padding: 1rem;
-    }
-
-    .parrafo-fondo p {
-        position: relative;
-        z-index: 2;
-        width: 100%;
-    }
-    }
+/*# sourceMappingURL=estilo.css.map */
