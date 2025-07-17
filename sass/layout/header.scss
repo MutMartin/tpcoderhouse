@@ -1,4 +1,3 @@
-
 .logotipo {
     width: 5rem;
 }
@@ -15,6 +14,7 @@
 
 .tlogo {
     width: 4rem;
+    z-index: 2;
 }
 
 .tlogo-fondo {
@@ -23,13 +23,14 @@
     border-radius: 50%;
     bottom: 0.5rem;
     right: 0.5rem;
+    z-index: 2;
 }
 
 
 
 
 header div {
-    display: flex;
+    @extend %flex-horizontal;
     text-align: center;
     padding: 0.5%;
     margin: 0%;
@@ -37,11 +38,9 @@ header div {
 }
 
 .navegacion-header ul {
-    display: flex;
+    @extend %flex-horizontal;
     height: 10vh;
     margin: 2%;
-
-
 }
 
 .navbar-text-center {
@@ -58,7 +57,7 @@ header div {
 }
 
 .navbar-custom {
-    background-color: rgb(0, 0, 0);
+    background-color: $negro;
 }
 
 .nav-link {

@@ -1,0 +1,48 @@
+
+@media screen and (min-width: 500px) {
+    h1 {
+        width: 100%;
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 300px);
+
+    }
+
+    .div1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .div2 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .div3 {
+        grid-column: 1/4;
+        grid-row: 2/4;
+    }
+
+    .div5 {
+        grid-area: 4 / 1 / 4 / 3;
+    }
+
+    .div4 {
+        grid-area: 4 / 3 / 4 / 3;
+    }
+
+
+    .parrafo-fondo {
+        padding: 4rem;
+    }
+
+    .parrafo-fondo p {
+        width: 50%;
+    }
+    .articulos{
+        width: 18rem;
+    }
+}
